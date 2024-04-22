@@ -1,0 +1,8 @@
+#Change application port:
+#server:
+#  port: 3000
+
+#Turn off/change type of webserver
+#spring:
+#  main:
+#    web-application-type: none
