@@ -1,8 +1,4 @@
-#Change application port:
-#server:
-#  port: 3000
-
-#Turn off/change type of webserver
-#spring:
-#  main:
-#    web-application-type: none
+server:
+  port: 8080
+  error:
+    include-message: always
