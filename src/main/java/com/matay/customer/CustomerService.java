@@ -12,11 +12,9 @@ import java.util.List;
 public class CustomerService {
 
     private final CustomerDao customerDao;
-    private final CustomerRepository customerRepository;
 
-    public CustomerService(@Qualifier("jpa") CustomerDao customerDao, CustomerRepository customerRepository) {
+    public CustomerService(@Qualifier("jpa") CustomerDao customerDao) {
         this.customerDao = customerDao;
-        this.customerRepository = customerRepository;
     }
 
     public List<Customer> getAllCustomers() {
@@ -85,6 +83,6 @@ public class CustomerService {
         }
 
         //save updated customer
-        customerRepository.save(customer);
+        customerDao.updateCustomer(customer);
     }
 }
