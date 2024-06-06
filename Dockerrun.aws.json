@@ -1,0 +1,13 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "matayyy/filestore-app:latest",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "hostPort": 80,
+      "containerPort": 8080
+    }
+  ]
+}

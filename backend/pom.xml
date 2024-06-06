@@ -13,14 +13,15 @@
     <groupId>com.matay</groupId>
     <artifactId>filestore-app</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>filestore-app</name>
-    <description>filestore-app</description>
+    <name>filestore-app-api</name>
+    <description>filestore-app-api</description>
 
     <properties>
         <java.version>17</java.version>
         <docker.username>matayyy</docker.username>
         <docker.image.name>filestore-app</docker.image.name>
-        <docker.image.tag/>
+<!--    <maven.build.timestamp.format>yyyyMMdd-HHmmssSSS</maven.build.timestamp.format>-->
+        <maven.build.timestamp.format>dd.MM.yyyy-HH.mm.ss</maven.build.timestamp.format>
     </properties>
 
     <dependencies>
@@ -168,7 +169,7 @@
                 <!-- PLUGIN FOR JIB RESPONSIBLE FOR CREATING DOCKER IMAGES -->
                 <groupId>com.google.cloud.tools</groupId>
                 <artifactId>jib-maven-plugin</artifactId>
-                <version>3.4.2</version>
+                <version>3.4.3</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -182,18 +183,14 @@
                         <image>eclipse-temurin:17</image>
                         <platforms>
                             <platform>
-                                <architecture>arm64</architecture>
-                                <os>linux</os>
-                            </platform>
-                            <platform>
                                 <architecture>amd64</architecture>
                                 <os>linux</os>
                             </platform>
                         </platforms>
                     </from>
                     <to>
-                        <!--<image>docker.io/${docker.username}/${docker.image.name}:${docker.image.tag}</image>-->
-                        <image>docker.io/${docker.username}/${docker.image.name}</image>
+<!--                    <image>docker.io/${docker.username}/${docker.image.name}:${docker.image.tag}</image>-->
+                        <image>docker.io/${docker.username}/${docker.image.name}:${maven.build.timestamp}</image>
                         <tags>
                             <tag>latest</tag>
                         </tags>

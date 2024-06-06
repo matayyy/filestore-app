@@ -1,0 +1,4 @@
+AFTER RUNNING APP EXEC INTO DOCKER CONTAINER AND CREATE DB CUSTOMER
+docker exec -it [containerID] bash
+psql -U [postgresUser]
+create database customer;
