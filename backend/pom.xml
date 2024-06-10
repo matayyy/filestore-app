@@ -21,7 +21,8 @@
         <docker.username>matayyy</docker.username>
         <docker.image.name>filestore-app</docker.image.name>
 <!--    <maven.build.timestamp.format>yyyyMMdd-HHmmssSSS</maven.build.timestamp.format>-->
-        <maven.build.timestamp.format>dd.MM.yyyy-HH.mm.ss</maven.build.timestamp.format>
+<!--    <maven.build.timestamp.format>dd.MM.yyyy-HH.mm.ss</maven.build.timestamp.format>-->
+        <docker.image.tag/>
     </properties>
 
     <dependencies>
@@ -189,8 +190,8 @@
                         </platforms>
                     </from>
                     <to>
-<!--                    <image>docker.io/${docker.username}/${docker.image.name}:${docker.image.tag}</image>-->
-                        <image>docker.io/${docker.username}/${docker.image.name}:${maven.build.timestamp}</image>
+<!--                    <image>docker.io/${docker.username}/${docker.image.name}:${maven.build.timestamp}</image>-->
+                        <image>docker.io/${docker.username}/${docker.image.name}:${docker.image.tag}</image>
                         <tags>
                             <tag>latest</tag>
                         </tags>
