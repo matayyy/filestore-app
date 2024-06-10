@@ -1,7 +1,7 @@
 {
   "AWSEBDockerrunVersion": "1",
   "Image": {
-    "Name": "matayyy/filestore-app:10.06.2024.12.48.44",
+    "Name": "matayyy/filestore-app:10.06.2024.14.23.51",
     "Update": "true"
   },
   "Ports": [
